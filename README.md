@@ -15,7 +15,7 @@ This repository contains two ImageJ macros that automate a common workflow in ce
 - save summarized results to file
 
 ## Usage
-This repository contains two different macros:
+This repository contains two different macros (click on filename to download):
 - [`FluorescenceIntensityAnalysis.ijm`](https://raw.githubusercontent.com/christophmark/imagej-interactive-thresholding/master/FluorescenceIntensityAnalysis.ijm) is a general macro to threshold (fluorescent) objects in images and automatically analyze the area fraction covered by those objects in a series of images, or measure the area of individual objects. Furthermore, a second series of images can be supplied to automatically analyze the intensity values in these images, based on the segmented regions.
 
 - [`NucleiFluorescenceIntensity.ijm`](https://raw.githubusercontent.com/christophmark/imagej-interactive-thresholding/master/NucleiFluorescenceIntensity.ijm) is a more specialized version of the first macro, and focuses on detecting cell nuclei in one fluorescence channel (tested with [DAPI](https://en.wikipedia.org/wiki/DAPI)). The macro subsequently measures the intensity of those nuclei in a second fluorescence channel. It can be used to check the number of nuclei expressing a certain protein, and to estimate the corresponding expression level for individual nuclei. To separate clumps of nuclei, the macro applies [Watershed Separation](http://imagej.net/Nuclei_Watershed_Separation). Again, the user may review the automatic detection and separation of the nuclei, and change any erroneous detections before the automatic analysis.
